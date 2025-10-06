@@ -1,0 +1,139 @@
+@font-face {
+  font-family: PressStart;
+  src: url(./fonts/PressStart2P.ttf);
+}
+@font-face {
+  font-family: RetroWide;
+  src: url(./fonts/Retro\ Mono\ Wide.ttf);
+}
+
+body{
+  background-color: #FFFFFF;
+}
+
+html, body, .StartScreen, .game{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.StartScreen, .Title, .qbox, .answer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.StartScreen{
+    background-image: url('./img/BG_MAIN.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+
+    .Title {
+    font-family: 'RetroWide', sans-serif;
+    width: 100%;
+    height: 30%;
+    margin-top: 5vw;
+    background-color: #1f1f1f62;
+
+    .main-title{
+      display: flex;
+      align-items: center;
+      height: 50%;
+
+      h1{
+        font-size: 8rem;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(180deg,rgba(204, 204, 204, 1) 0%, rgba(131, 90, 0, 1) 29%, rgba(227, 181, 0, 1) 43%, rgba(213, 213, 213, 1) 52%, rgba(94, 0, 167, 1) 53%, rgba(255, 89, 244, 1) 65%, rgba(255, 255, 255, 1) 69%);
+        filter: drop-shadow(0 0 20px rgba(253, 210, 17, 0.8));
+      }
+    }
+
+    h2{
+      font-size: 2.5rem;
+      color: rgb(183, 95, 255);
+      margin: 1vw 0 0 0;
+      text-shadow: 0 0 20px rgba(198,17,253,0.7);
+    }
+  }
+
+  p{
+    margin-top: 5vw;
+    font-family: PressStart;
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+.game{
+  font-family: PressStart;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  #illojuan{
+    height: 65vh;
+    image-rendering: pixelated;
+  }
+
+  .qbox{
+    background-color: rgba(31, 31, 31, 0.62);
+    width: 100%;
+    height: 15%;
+
+    .questions{
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 1%;
+      column-gap: 4vw;
+      align-items: center;
+      font-size: 1.35rem;
+      color: white;
+      
+      .letter{
+        color: #FFB056;
+      }
+    }
+  }
+
+  .answer{
+    width: 100%;
+    height: 5%;
+    margin-bottom: 1%;
+    background-color: rgba(31, 31, 31, 0.62);
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  .question_history_nav{
+    display: flex;
+    flex-direction: row;
+    margin: 2vh;
+    flex-wrap: wrap;
+    gap: 1vw;
+
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #2C004D;
+      font-size: 0.8rem;
+      color: white;
+
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+    }
+  }
+}
+

@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "¿En qué año salió a la venta la consola PlayStation de Sony?",
+      "options": ["1993", "1994", "1996", "1998"],
+      "correct_answer": "1994"
+    },
+    {
+      "question": "¿Cuál fue el juego más vendido de la consola Nintendo 64?",
+      "options": ["The Legend of Zelda: Ocarina of Time", "GoldenEye 007", "Super Mario 64", "Mario Kart 64"],
+      "correct_answer": "Super Mario 64"
+    },
+    {
+      "question": "¿Qué famoso videojuego introdujo el modo multijugador en línea en Xbox a través de Xbox Live en 2001?",
+      "options": ["Halo: Combat Evolved", "Gears of War", "Fable", "MechAssault"],
+      "correct_answer": "Halo: Combat Evolved"
+    },
+    {
+      "question": "¿Cuál fue el primer título de la saga 'Grand Theft Auto' en ser completamente en 3D?",
+      "options": ["GTA: Vice City", "GTA III", "GTA: San Andreas", "GTA 2"],
+      "correct_answer": "GTA III"
+    },
+    {
+      "question": "¿Cómo se llamaba el enemigo principal en la trilogía original de Crash Bandicoot?",
+      "options": ["Doctor Nefarious", "Doctor Wily", "Doctor Neo Cortex", "Doctor Eggman"],
+      "correct_answer": "Doctor Neo Cortex"
+    },
+    {
+      "question": "¿Qué videojuego popularizó el género de música y ritmo con guitarras de plástico?",
+      "options": ["Guitar Hero", "Rock Band", "Dance Dance Revolution", "SingStar"],
+      "correct_answer": "Guitar Hero"
+    }
+  ]
+}
